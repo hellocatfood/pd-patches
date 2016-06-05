@@ -1,2 +1,4 @@
-# pd-patches
-Pure Data patches
+pd-patches
+==========
+
+Pure Data patches. Mostly unfinished

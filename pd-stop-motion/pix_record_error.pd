@@ -1,0 +1,47 @@
+#N canvas 132 153 564 374 10;
+#X obj 281 40 gemwin;
+#X obj 39 118 gemhead;
+#X obj 39 148 pix_video;
+#X obj 39 177 pix_texture;
+#X obj 39 205 rectangle 4 3;
+#X obj 39 88 metro 10;
+#X obj 39 59 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X msg 281 10 buffer 1 \, create \, 1;
+#X msg 189 165 record \$1;
+#X obj 189 143 tgl 15 0 empty empty empty 17 7 0 10 -257985 -1 -1 0
+1;
+#X msg 137 44 0;
+#X obj 39 285 pix_record;
+#X floatatom 67 315 5 0 0 0 - - -;
+#X obj 67 334 change;
+#X msg 189 205 1;
+#X msg 189 105 file ./test.mov;
+#X text 292 104 1- open file;
+#X text 292 164 2- start record;
+#X text 292 204 3- capture frame;
+#X text 422 164 4- stop record;
+#X text 182 284 Despite rendering not being on \, the pix record object
+continues to record until it is turned off. A bug?;
+#X msg 240 232 auto 0;
+#X msg 142 232 bang;
+#X msg 439 117 codeclist;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 11 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 0 0 0;
+#X connect 8 0 11 0;
+#X connect 9 0 8 0;
+#X connect 10 0 6 0;
+#X connect 11 1 12 0;
+#X connect 12 0 13 0;
+#X connect 13 0 10 0;
+#X connect 14 0 6 0;
+#X connect 14 0 22 0;
+#X connect 15 0 11 0;
+#X connect 21 0 11 0;
+#X connect 22 0 11 0;
+#X connect 23 0 11 0;
