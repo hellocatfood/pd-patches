@@ -1,0 +1,21 @@
+#N canvas 879 176 450 300 10;
+#X obj 98 23 inlet;
+#X obj 98 135 sel 1;
+#X obj 125 181 outlet;
+#X obj 125 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 145 23 inlet;
+#X obj 98 203 outlet;
+#X obj 98 99 counter;
+#X obj 98 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 145 61 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 6 0;
+#X connect 1 0 7 0;
+#X connect 1 1 3 0;
+#X connect 3 0 2 0;
+#X connect 4 0 8 0;
+#X connect 6 0 1 0;
+#X connect 7 0 5 0;
+#X connect 8 0 6 3;

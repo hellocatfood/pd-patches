@@ -1,0 +1,6 @@
+#N canvas 710 340 450 300 10;
+#X obj 122 50 maxlib/scale \$1 \$2 \$3 \$4 0;
+#X obj 122 30 inlet;
+#X obj 122 81 outlet;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
