@@ -1,0 +1,55 @@
+#N canvas 303 77 935 1003 10;
+#X obj 212 108 cnv 15 200 70 empty empty empty 20 12 0 14 -191407 -66577
+0;
+#X obj 35 273 pix_data;
+#X obj 50 73 pix_info . . .;
+#X obj 50 53 pix_image;
+#X obj 50 -137 gemhead;
+#X floatatom 65 203 5 0 0 0 - - -, f 5;
+#X floatatom 80 243 5 0 0 0 - - -, f 5;
+#X obj 80 223 r y;
+#X obj 35 153 r bang;
+#X obj 70 -57 openpanel;
+#X msg 70 -37 open \$1;
+#X text 99 92 width;
+#X text 111 112 height;
+#X obj 70 -15 t a b;
+#X obj 97 5 s initbang;
+#X obj 65 183 r x;
+#X obj 61 93 s w;
+#X obj 73 113 s h;
+#X obj 210 -57 stripdir;
+#X obj 160 -137 inlet openimage;
+#X text 184 341 send RGB values ofcurrent pixel;
+#X obj 80 369 outlet grey;
+#X symbolatom 216 146 26 0 0 0 - - -, f 26;
+#X obj 216 112 bng 30 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X text 254 117 open image;
+#X obj 326 112 tgl 30 0 empty empty empty 17 7 0 10 -257985 -1 -1 0
+1;
+#X text 364 117 on/off;
+#X obj 80 329 spigot;
+#X connect 1 2 27 0;
+#X connect 2 0 1 1;
+#X connect 2 1 16 0;
+#X connect 2 2 17 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 1 2;
+#X connect 6 0 1 3;
+#X connect 7 0 6 0;
+#X connect 8 0 1 0;
+#X connect 9 0 10 0;
+#X connect 9 0 18 0;
+#X connect 10 0 13 0;
+#X connect 13 0 3 0;
+#X connect 13 1 14 0;
+#X connect 15 0 5 0;
+#X connect 18 0 22 0;
+#X connect 19 0 10 0;
+#X connect 19 0 18 0;
+#X connect 23 0 9 0;
+#X connect 25 0 27 1;
+#X connect 27 0 21 0;
+#X coords 0 -1 1 1 200 70 1 212 108;

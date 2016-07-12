@@ -1,0 +1,44 @@
+Inlet 1
+Open image
+Send the path to the image file that you want to open. Avoids having to use the file browser
+
+Inlet 2
+Scale audio
+Scales each channel simlultaneously. Accepts values from 0 - 2000
+
+Inlet 3
+Scale red channel
+Scales the red colour channel. Accepts values from 0 - 2000
+
+Inlet 4
+Scale green channel
+Scales the red colour channel. Accepts values from 0 - 2000
+
+Inlet 5
+Scale blue channel
+Scales the red colour channel. Accepts values from 0 - 2000
+
+Inlet 6
+Select audio wave for red channel
+0 = sine wave
+1 = sawtooth wave
+2 = square wave
+3 = off
+
+Inlet 7
+Select audio wave for green channel
+0 = sine wave
+1 = sawtooth wave
+2 = square wave
+3 = off
+
+Inlet 8
+Select audio wave for blue channel
+0 = sine wave
+1 = sawtooth wave
+2 = square wave
+3 = off
+
+inlet 9
+Volume
+Change the volume for individual image player. Accepts values from 0 - 1
